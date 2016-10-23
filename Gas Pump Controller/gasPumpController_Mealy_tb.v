@@ -94,7 +94,7 @@ module gasPumpContronller_Mealy_tb;
 
 		pressureSensor = 0;
 		nozzleSwitch = 0;
-		fuel_out_compare_async = 1;
+		fuel_out_compare_async = 0;
 		toggle_clk;
 
 		pressureSensor = 0;
@@ -109,7 +109,7 @@ module gasPumpContronller_Mealy_tb;
 
 		pressureSensor = 1;
 		nozzleSwitch = 1;
-		fuel_out_compare_async = 1;
+		fuel_out_compare_async = 0;
 		toggle_clk;
 
 		reset = 1;
@@ -118,24 +118,24 @@ module gasPumpContronller_Mealy_tb;
 		#10;
 
 		pressureSensor = 0;
-    nozzleSwitch = 0;
-    fuel_out_compare_async = 1;
-    toggle_clk;
+        nozzleSwitch = 0;
+        fuel_out_compare_async = 0;
+        toggle_clk;
 
-    pressureSensor = 0;
-    nozzleSwitch = 1;
-    fuel_out_compare_async = 0;
-    toggle_clk;
+        pressureSensor = 0;
+        nozzleSwitch = 1;
+        fuel_out_compare_async = 1;
+        toggle_clk;
 
-    pressureSensor = 1;
-    nozzleSwitch = 0;
-    fuel_out_compare_async = 0;
-    toggle_clk;
+        pressureSensor = 1;
+        nozzleSwitch = 0;
+        fuel_out_compare_async = 0;
+        toggle_clk;
 
-    pressureSensor = 1;
-    nozzleSwitch = 1;
-    fuel_out_compare_async = 1;
-    toggle_clk;
+        pressureSensor = 1;
+        nozzleSwitch = 1;
+        fuel_out_compare_async = 0;
+        toggle_clk;
 
     $finish;
 	end
